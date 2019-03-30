@@ -1,272 +1,349 @@
 @import "config";
 
-* {
-  margin: 0;
-  padding: 0;
-  line-height: 1.4;
-  // overflow: hidden;
-}
+// * {
+//   margin: 0;
+//   padding: 0;
+//   line-height: 1.4;
+//   // overflow: hidden;
+// }
 
-// Utilities
+// // Utilities
 
-.container {
-  max-width: 1100px;
-  margin: auto;
-  padding: 2rem 0;
-}
-
-.container-about {
-  max-width: 1100px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-// .container-about {
-//   max-width: 1200px;
+// .container {
+//   max-width: 1100px;
 //   margin: auto;
 //   padding: 2rem 0;
+// }
+
+// .container-about {
+//   max-width: 1100px;
+//   margin: 0 auto;
+//   text-align: center;
+// }
+
+// // .container-about {
+// //   max-width: 1200px;
+// //   margin: auto;
+// //   padding: 2rem 0;
+// //   background: #fff;
+// // }
+
+// a {
+//   text-decoration: none;
+// }
+
+// .cursive {
+//   font-family: $cursive;
+// }
+
+// .green {
+//   color: $main-color;
+// }
+
+// body {
+//   font-family: Arial, Helvetica, sans-serif;
 //   background: #fff;
 // }
 
-a {
-  text-decoration: none;
-}
+// #main-nav {
+//   background-color: #444;
+//   display: flex;
+//   justify-content: space-between;
+//   border-bottom: 3px solid $main-color;
+//   transition: border-color 1s;
 
-.cursive {
-  font-family: $cursive;
-}
+//   &:hover {
+//     border-color: $main-color;
+//   }
 
-.green {
-  color: $main-color;
-}
+//   h1 {
+//     color: #fff;
+//     padding: 1rem 0 0.5rem 1.5rem;
+//   }
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  background: #fff;
-}
+//   .big {
+//     font-size: 2.5rem;
+//   }
 
-#main-nav {
-  background-color: #444;
-  display: flex;
-  justify-content: space-between;
-  border-bottom: 3px solid $main-color;
-  transition: border-color 1s;
+//   ul {
+//     display: flex;
+//     list-style: none;
+//     padding: 0 0.5rem;
+//     align-items: center;
+//   }
 
-  &:hover {
-    border-color: $main-color;
-  }
+//   ul li a {
+//     padding: 0 0.5rem;
+//     font-size: 0.9rem;
+//     color: #fff;
+//     text-decoration: none;
+//     border-bottom: 3px solid transparent;
+//     text-transform: uppercase;
+//     transition: all 1s;
+//   }
 
-  h1 {
-    color: #fff;
-    padding: 1rem 0 0.5rem 1.5rem;
-  }
+//   ul li a:hover {
+//     color: $main-color;
+//     border-color: $main-color;
+//   }
 
-  .big {
-    font-size: 2.5rem;
-  }
+//   .current {
+//     color: $main-color;
+//   }
+// }
 
-  ul {
-    display: flex;
-    list-style: none;
-    padding: 0 0.5rem;
-    align-items: center;
-  }
+// #showcase {
+//   background: #333 url("../img/coffee.jpg") no-repeat center center / cover;
+//   height: 100vh;
+//   color: #fff;
+//   overflow: hidden;
+// }
 
-  ul li a {
-    padding: 0 0.5rem;
-    font-size: 0.9rem;
-    color: #fff;
-    text-decoration: none;
-    border-bottom: 3px solid transparent;
-    text-transform: uppercase;
-    transition: all 1s;
-  }
+// .showcase-content {
+//   display: flex;
+//   flex-direction: column;
+//   text-align: center;
+//   align-items: center;
+//   margin-top: 3rem;
+//   // justify-content: center;
+//   height: 100%;
+//   // overlay
+//   // position: absolute;
+//   // top: 80px;
+//   // left: 0;
+//   // right: 0;
+//   // bottom: 0;
+//   // background-color: rgba($color: #000, $alpha: 0.3);
 
-  ul li a:hover {
-    color: $main-color;
-    border-color: $main-color;
-  }
+//   a {
+//     color: #fff;
+//   }
 
-  .current {
-    color: $main-color;
-  }
-}
+//   .btn {
+//     text-decoration: none;
+//     color: #fff;
+//     // border: 1px #fff solid;
+//     padding: 0 0.5rem;
+//     background: $main-color;
+//     margin-top: 1rem;
+//     transition: all 1s;
+//     box-shadow: 2px 2px 10px #fff;
+//   }
 
-#showcase {
-  background: #333 url("../img/coffee.jpg") no-repeat center center / cover;
-  height: 100vh;
-  color: #fff;
+//   .btn:hover {
+//     color: $main-color;
+//     background: #fff;
+//     box-shadow: 2px 2px 20px $main-color;
+//   }
+// }
+
+// // About
+
+// #about {
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   justify-content: center;
+//   text-align: center;
+// }
+
+// #about i {
+//   padding: 0.5rem;
+// }
+
+// // Boxes Landing
+
+// #landing {
+//   display: grid;
+//   grid-template-columns: 1fr 1fr;
+//   justify-content: center;
+//   align-items: center;
+//   background-color: #f4f4f4;
+//   background-image: url(../img/bg-2.jpg);
+//   height: 100vh;
+// }
+
+// .boxes {
+//   display: flex;
+//   right: 10px;
+//   align-items: center;
+//   margin-right: 10px;
+//   background-image: url(../img/bg-3.jpg);
+// }
+
+// .logo {
+//   text-align: center;
+//   margin: auto;
+// }
+
+// .box-home {
+//   height: 50px;
+//   width: 50px;
+//   border: 100px solid;
+//   position: relative;
+//   left: 90px;
+//   text-align: bottom;
+
+//   border-bottom-color: $secondary-color;
+//   border-top-color: transparent;
+//   border-left-color: transparent;
+//   border-right-color: transparent;
+//   transition: all 2s;
+
+//   &:hover {
+//     transform: scale(1.5);
+//   }
+
+//   .home {
+//     position: relative;
+//     top: 50px;
+//     right: 15px;
+//     color: #fff;
+//   }
+// }
+// .box-about {
+//   height: 50px;
+//   width: 50px;
+//   border: 100px solid;
+//   position: relative;
+//   top: 80px;
+
+//   border-bottom-color: transparent;
+//   border-top-color: $main-color;
+//   border-left-color: transparent;
+//   border-right-color: transparent;
+//   transition: all 2s;
+//   z-index: 1;
+
+//   &:hover {
+//     transform: scale(1.5);
+//   }
+
+//   .about {
+//     position: relative;
+//     bottom: 70px;
+//     right: 20px;
+//     color: #fff;
+//   }
+// }
+// .box-contact {
+//   height: 50px;
+//   width: 50px;
+//   border: 100px solid;
+//   position: relative;
+//   right: 90px;
+
+//   border-bottom-color: $secondary-color;
+//   border-top-color: transparent;
+//   border-left-color: transparent;
+//   border-right-color: transparent;
+//   transition: all 2s;
+
+//   &:hover {
+//     transform: scale(1.5);
+//   }
+
+//   .contact {
+//     position: relative;
+//     top: 50px;
+//     right: 25px;
+//     color: #fff;
+//   }
+// }
+
+// // Land -2
+
+// // .landing-boxes {
+// //   width: 100vw;
+// //   height: 100vh;
+// // }
+
+// // .box-container {
+// //   width: 80%;
+// //   height: 80%;
+// //   margin: auto;
+// //   display: grid;
+// //   grid-template-columns: repeat(3, 1fr);
+// // }
+
+// // .title {
+// //   background-image: url(../img/bg-2.jpg);
+// //   height: 30vh;
+// // }
+
+// .box {
+//   position: relative;
+//   top: 50px;
+//   width: 50px;
+//   height: 50px;
+//   border-radius: 50%;
+//   // background-image: url("../img/triangle.png");
+//   background-color: #444;
+//   // background-position: center center;
+//   // background-repeat: no-repeat;
+//   overflow: visible !important;
+// }
+
+// Trokuti s hover state-om!!!
+
+.tr-1 {
+  width: 30%;
+  padding-bottom: 21.27%; /* = width / 1.41 */
+  position: relative;
   overflow: hidden;
 }
 
-.showcase-content {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  align-items: center;
-  margin-top: 3rem;
-  // justify-content: center;
+.tr-1 a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
   height: 100%;
-  // overlay
-  // position: absolute;
-  // top: 80px;
-  // left: 0;
-  // right: 0;
-  // bottom: 0;
-  // background-color: rgba($color: #000, $alpha: 0.3);
-
-  a {
-    color: #fff;
-  }
-
-  .btn {
-    text-decoration: none;
-    color: #fff;
-    // border: 1px #fff solid;
-    padding: 0 0.5rem;
-    background: $main-color;
-    margin-top: 1rem;
-    transition: all 1s;
-    box-shadow: 2px 2px 10px #fff;
-  }
-
-  .btn:hover {
-    color: $main-color;
-    background: #fff;
-    box-shadow: 2px 2px 20px $main-color;
-  }
+  background: #0079c6;
+  transform-origin: left bottom;
+  transform: rotate(45deg);
+  transition: all 1s;
 }
 
-// About
-
-#about {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
-#about i {
-  padding: 0.5rem;
-}
-
-// Boxes Landing
-
-#landing {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-content: center;
-  align-items: center;
-  background-color: #f4f4f4;
-  background-image: url(../img/bg-2.jpg);
-  height: 100vh;
-}
-
-.boxes {
-  display: flex;
-  right: 10px;
-  align-items: center;
-  margin-right: 10px;
-  background-image: url(../img/bg-3.jpg);
-}
-
-.logo {
-  text-align: center;
-  margin: auto;
-}
-
-.box-home {
-  height: 50px;
-  width: 50px;
-  border: 100px solid;
+.tr-1 img {
   position: relative;
-  left: 90px;
-  text-align: bottom;
-
-  border-bottom-color: $secondary-color;
-  border-top-color: transparent;
-  border-left-color: transparent;
-  border-right-color: transparent;
-  transition: all 2s;
-
-  &:hover {
-    transform: scale(1.5);
-  }
-
-  .home {
-    position: relative;
-    top: 50px;
-    right: 15px;
-    color: #fff;
-  }
+  right: 12%;
+  top: 17%;
+  transform: rotate(-45deg);
+  transition: all 1s;
 }
-.box-about {
-  height: 50px;
-  width: 50px;
-  border: 100px solid;
+
+.tr-1 a:hover {
+  background-color: aqua;
+}
+
+.tr-1 a img:hover {
+  transform: scale(1.2) rotate(-45deg);
+}
+
+.tr-2 {
   position: relative;
-  top: 80px;
-
-  border-bottom-color: transparent;
-  border-top-color: $main-color;
-  border-left-color: transparent;
-  border-right-color: transparent;
-  transition: all 2s;
-  z-index: 1;
-
-  &:hover {
-    transform: scale(1.5);
-  }
-
-  .about {
-    position: relative;
-    bottom: 70px;
-    right: 20px;
-    color: #fff;
-  }
-}
-.box-contact {
-  height: 50px;
-  width: 50px;
-  border: 100px solid;
+  bottom: 250px;
+  left: 500px;
+  width: 40%;
+  padding-bottom: 21.27%; /* = width / 1.41 */
   position: relative;
-  right: 90px;
-
-  border-bottom-color: $secondary-color;
-  border-top-color: transparent;
-  border-left-color: transparent;
-  border-right-color: transparent;
-  transition: all 2s;
-
-  &:hover {
-    transform: scale(1.5);
-  }
-
-  .contact {
-    position: relative;
-    top: 50px;
-    right: 25px;
-    color: #fff;
-  }
+  overflow: hidden;
+  transform: skew(50deg);
 }
 
-// Land -2
-
-.landing-boxes {
-  width: 100vw;
-  height: 100vh;
+.tr-2 a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #0079c6;
+  transform-origin: left bottom;
+  transform: rotate(45deg);
+  transition: background-color 1s;
 }
 
-.box-container {
-  width: 80%;
-  height: 80%;
-  margin: auto;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-}
-
-.title {
-  background-image: url(../img/bg-2.jpg);
-  height: 30vh;
+.tr-2 a:hover {
+  background-color: aqua;
 }
